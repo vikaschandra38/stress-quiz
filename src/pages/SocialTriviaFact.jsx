@@ -1,8 +1,8 @@
-import sevenNewsImg from "../assets/7news.png";
-import courierMailImg from "../assets/courier-mail.png";
-import speakerImg from "../assets/speaker.png";
-import tenImg from "../assets/ten.png";
 import Button from "../components/Button";
+import sevenNewsImg from "/assets/7news.png";
+import courierMailImg from "/assets/courier-mail.png";
+import speakerImg from "/assets/speaker.png";
+import tenImg from "/assets/ten.png";
 
 const SocialTriviaFact = ({ onClick }) => {
   return (
