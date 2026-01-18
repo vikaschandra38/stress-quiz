@@ -22,7 +22,7 @@ const CourseIntro = () => {
         </h3>
       </div>
 
-      <p className="text-base text-center mb-8 font-semibold">
+      <p className="text-md md:text-lg text-center my-4 font-semibold">
         Built by a former K9 cop who has lived the job and rebuilt from the edge, this course
         targets the real impact policing has on your brain, nervous system, and relationships.
       </p>
@@ -46,7 +46,7 @@ const CourseIntro = () => {
                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
               />
             </svg>
-            <p>{action}</p>
+            <p className="text-md md:text-lg font-normal">{action}</p>
           </li>
         ))}
       </ol>

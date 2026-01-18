@@ -4,7 +4,7 @@ import { PAGE_LINKS } from "../constants/app.constants";
 import { convertScoreToPercentage, convertScoreToStressBand } from "../utils/app.utils";
 
 const YourScore = () => {
-  const { score } = useLocation().state || { score: 14 };
+  const { score = 14 } = useLocation().state || { score: 14 };
 
   const percentage = convertScoreToPercentage(score);
   const stressBand = convertScoreToStressBand(score);
@@ -22,7 +22,7 @@ const YourScore = () => {
           <ul role="list" className="space-y-3 p-6 divide-y divide-default">
             <li className="flex items-center justify-between pb-3">
               <div className="flex justify-center items-center w-full">
-                <h3 className="text-md font-semibold text-black min-h-8 flex items-center justify-center">
+                <h3 className="text-md font-semibold text-black min-h-8 md:min-h-12 flex items-center justify-center">
                   You are here: <span className="text-2xl font-bold text-primary">&nbsp;{percentage}%</span>
                 </h3>
               </div>
@@ -49,7 +49,7 @@ const YourScore = () => {
           <ul role="list" className="space-y-3 p-6 divide-y divide-default">
             <li className="flex items-center justify-between pb-3">
               <div className="flex justify-center items-center w-full">
-                <h3 className="text-md font-semibold text-black min-h-8">
+                <h3 className="text-md font-semibold text-black min-h-8 md:min-h-12">
                   Don’t Let the Job Destroy You Course
                 </h3>
               </div>
