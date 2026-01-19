@@ -2,6 +2,13 @@ import { useState } from "react";
 import ButtonLink from "../components/ButtonLink";
 import ProgressBar from "../components/ProgressBar";
 
+const WELCOME = {
+  title: "Police Stress Quiz",
+  description:
+    "As a cop, your job can push you to the limit. Take our 2 minute quiz and see how you perform compared to other cops.",
+  disclaimer: "Your responses are confidential and used only for assessment purposes.",
+};
+
 const Welcome = () => {
   const [showButton, setShowButton] = useState(false);
 
@@ -9,14 +16,14 @@ const Welcome = () => {
     <div className="p-4 md:p-8">
       {/* Logo/Header */}
       <div className="text-center mb-8 md:mb-12">
-        <h1 className="text-4xl md:text-6xl font-bold text-black mb-4">Stress Level Quiz</h1>
+        <h1 className="text-4xl md:text-6xl font-bold text-black mb-4">{WELCOME.title}</h1>
         <div className="h-1.5 w-32 bg-primary mx-auto rounded-full"></div>
       </div>
 
       {/* Description */}
       <div className="text-center mb-12 md:mb-16">
-        <p className="text-lg md:text-xl leading-6.5 text-black mb-4 font-normal">
-          Understanding your stress level is the first step toward better wellbeing.
+        <p className="text-lg md:text-xl text-black mb-4 font-normal">
+          {WELCOME.description}
         </p>
       </div>
 
@@ -29,9 +36,7 @@ const Welcome = () => {
       </div>
 
       {/* Footer note */}
-      <p className="text-center text-gray text-sm md:text-md mt-8 md:mt-10">
-        Your responses are confidential and used only for assessment purposes.
-      </p>
+      <p className="text-center text-gray text-sm md:text-md mt-8 md:mt-10">{WELCOME.disclaimer}</p>
     </div>
   );
 };

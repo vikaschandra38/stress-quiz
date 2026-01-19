@@ -18,11 +18,11 @@ const YourScore = () => {
       </div>
 
       <div className="mt-6 flex flex-col md:flex-row gap-4">
-        <div className="w-full md:w-1/2 bg-white text-black border border-primary rounded-lg shadow-xs">
+        <div className="w-full md:w-1/2 bg-black text-white border-2 border-black rounded-lg shadow-xs">
           <ul role="list" className="space-y-3 p-6 divide-y divide-default">
             <li className="flex items-center justify-between pb-3">
               <div className="flex justify-center items-center w-full">
-                <h3 className="text-md font-semibold text-black min-h-8 md:min-h-12 flex items-center justify-center">
+                <h3 className="text-md font-semibold min-h-8 md:min-h-12 flex items-center justify-center">
                   You are here: <span className="text-2xl font-bold text-primary">&nbsp;{percentage}%</span>
                 </h3>
               </div>
@@ -35,7 +35,7 @@ const YourScore = () => {
             {stressBand.struggles.map((struggle, index) => (
               <li
                 key={index}
-                className="flex items-center justify-between pb-3 md:h-10 border-b-primary"
+                className="flex items-center justify-between pb-3 md:h-10 border-b-white"
               >
                 <div className="flex items-center text-body text-sm">
                   <span>{struggle}</span>
@@ -45,11 +45,11 @@ const YourScore = () => {
           </ul>
         </div>
 
-        <div className="w-full md:w-1/2 bg-white text-black border border-primary rounded-lg shadow-xs">
+        <div className="w-full md:w-1/2 bg-white text-black border-2 border-primary rounded-lg shadow-xs">
           <ul role="list" className="space-y-3 p-6 divide-y divide-default">
             <li className="flex items-center justify-between pb-3">
               <div className="flex justify-center items-center w-full">
-                <h3 className="text-md font-semibold text-black min-h-8 md:min-h-12">
+                <h3 className="text-md font-semibold min-h-8 md:min-h-12">
                   Don’t Let the Job Destroy You Course
                 </h3>
               </div>

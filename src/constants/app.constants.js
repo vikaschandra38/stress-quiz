@@ -1,3 +1,5 @@
+export const EMAIL_WEBHOOK = "https://hook.us2.make.com/97c6s1fkr79zo4dgerexyu7kt9cyn1dn";
+
 export const PAGE_LINKS = {
   reviews: {
     next: "/email",

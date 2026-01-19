@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import ButtonLink from "../components/ButtonLink";
-import { PAGE_LINKS } from "../constants/app.constants";
 import StartRating from "../components/StarRating";
+import { PAGE_LINKS } from "../constants/app.constants";
 
-const CTAUrgency = () => {
+const BuyNow = () => {
   const [timeLeft, setTimeLeft] = useState(600); // 10 minutes in seconds
 
   useEffect(() => {
@@ -20,9 +20,20 @@ const CTAUrgency = () => {
     <div className="flex flex-col items-center justify-center gap-6">
       {/* Testimonial Header */}
       <h1 className="text-2xl md:text-3xl font-bold text-center">
-        Thousands of Officers Say This <span className="text-primary text-3xl md:text-4xl">Training</span> Has{" "}
+        Thousands of Officers Say This{" "}
+        <span className="text-primary text-3xl md:text-4xl">Training</span> Has{" "}
         <span className="text-primary text-3xl">Transformed</span> Their Lives
       </h1>
+
+      <div className="flex">
+        <img
+          src="/assets/buy-course.png"
+          height="360"
+          width="240"
+          alt="The book cover of The Unspoken Burden - A Survival Guide For Police Officers"
+          className="object-contain"
+        />
+      </div>
 
       {/* Star Rating */}
       <div className="flex flex-col items-center justify-center gap-3">
@@ -86,4 +97,4 @@ const CTAUrgency = () => {
   );
 };
 
-export default CTAUrgency;
+export default BuyNow;
