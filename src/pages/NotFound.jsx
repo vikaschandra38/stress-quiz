@@ -3,7 +3,7 @@ import Card from "../components/Card";
 
 const NotFound = () => {
   return (
-    <div className="min-h-screen bg-accent max-w-3xl mx-auto flex items-center justify-center">
+    <div className="min-h-screen bg-accent max-w-5xl mx-auto flex items-center justify-center">
       <Card>
         <h2 className="text-primary text-3xl text-center">404 - Page Not Found</h2>
         <p className="text-2xl text-center mt-8">The page you are looking for does not exist.</p>
