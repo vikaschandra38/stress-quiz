@@ -1,5 +1,8 @@
 import ButtonLink from "../components/ButtonLink";
 import { PAGE_LINKS } from "../constants/app.constants";
+import sevenNewsImg from "/assets/7news.png";
+import courierMailImg from "/assets/courier-mail.png";
+import tenImg from "/assets/ten.png";
 
 const Testimonials = () => {
   const testimonials = [
@@ -44,9 +47,9 @@ const Testimonials = () => {
         Shaun has been covered in:
       </h6>
       <div className="flex flex-wrap justify-center items-center gap-6 mt-4">
-        <img src="/assets/7news.png" alt="7 News" className="h-18 object-contain" />
-        <img src="/assets/courier-mail.png" alt="Courier Mail" className="h-18 object-contain" />
-        <img src="/assets/ten.png" alt="Ten Logo" className="h-18 object-contain" />
+        <img src={sevenNewsImg} alt="7 News" className="h-18 object-contain" />
+        <img src={courierMailImg} alt="Courier Mail" className="h-18 object-contain" />
+        <img src={tenImg} alt="Ten Logo" className="h-18 object-contain" />
       </div>
 
       <div className="flex gap-4 mt-auto pt-4 md:pt-8 justify-center">

@@ -1,7 +1,7 @@
 import Button from "../components/Button";
 import sevenNewsImg from "/assets/7news.png";
 import courierMailImg from "/assets/courier-mail.png";
-import speakerImg from "/assets/speaker.png";
+import speakerImg from "/assets/speaker.jpg";
 import tenImg from "/assets/ten.png";
 
 const SocialTriviaFact = ({ onClick }) => {
@@ -29,13 +29,13 @@ const SocialTriviaFact = ({ onClick }) => {
               Mentioned in
             </h4>
             <div className="flex flex-col flex-wrap justify-center items-center gap-4">
-              <img src="/assets/7news.png" alt="7 News" className="h-18 object-contain" />
+              <img src={sevenNewsImg} alt="7 News" className="h-18 object-contain" />
               <img
-                src="/assets/courier-mail.png"
+                src={courierMailImg}
                 alt="Courier Mail"
                 className="h-18 object-contain"
               />
-              <img src="/assets/ten.png" alt="Ten Logo" className="h-18 object-contain" />
+              <img src={tenImg} alt="Ten Logo" className="h-18 object-contain" />
             </div>
           </div>
         </div>
