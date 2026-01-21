@@ -3,18 +3,15 @@
  * Tracks user interactions and quiz progress through GTM
  */
 
+/**
+ * This function can be used to ensure the dataLayer exists.
+ * The GTM snippet in index.html handles the main initialization.
+ */
 export const initGTM = () => {
-  // Initialize GTM
-  // In production, replace with your actual GTM ID
-  const GTM_ID = 'GTM-XXXXXX'; // Replace with actual GTM ID
-
+  // This is a safeguard in case the GTM script fails to load.
   if (typeof window !== 'undefined' && !window.dataLayer) {
     window.dataLayer = [];
   }
-
-  // GTM script injection (if needed in production)
-  // This is typically handled by adding the script in index.html
-  // but we can add it programmatically here if needed
 };
 
 /**
@@ -24,18 +21,16 @@ export const initGTM = () => {
  */
 export const trackEvent = (eventName, eventData = {}) => {
   if (typeof window !== 'undefined' && window.dataLayer) {
-    window.dataLayer.push({
+    const eventPayload = {
       event: eventName,
       timestamp: new Date().toISOString(),
       ...eventData
-    });
+    };
+    window.dataLayer.push(eventPayload);
 
     // Also log to console in development
     if (import.meta.env.DEV) {
-      console.log(`[GTM Event] ${eventName}:`, {
-        timestamp: new Date().toISOString(),
-        ...eventData
-      });
+      console.log(`[GTM Event] ${eventName}:`, eventPayload);
     }
   }
 };

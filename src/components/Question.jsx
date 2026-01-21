@@ -21,8 +21,8 @@ const Question = ({
   const progressPercentage = (questionNumber / totalQuestions) * 100;
 
   return (
-    <div>
-      <div className="w-full flex flex-col justify-between md:justify-start">
+    <div className="flex flex-col justify-start items-center relative">
+      <div className="w-full flex flex-col justify-center md:justify-start">
         {/* Header Section */}
         <div className="mb-4 md:mb-6">
           <div className="flex items-start">
@@ -84,7 +84,7 @@ const Question = ({
         </div>
       </div>
       {/* Buttons Section */}
-      <div className="flex gap-4 mt-auto pt-4 md:pt-8 justify-center">
+      <div className="flex gap-4 justify-center fixed bottom-0 w-full py-2 px-8 bg-accent md:max-w-5xl">
         {questionNumber > 1 && (
           <Button type="button" text="Back" isSecondary={true} onClick={onPrevious} />
         )}

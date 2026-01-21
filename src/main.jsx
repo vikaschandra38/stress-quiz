@@ -46,19 +46,19 @@ const router = createBrowserRouter([
         element: <YourScore />,
       },
       {
-        path: 'course-intro',
+        path: "course-intro",
         element: <CourseIntro />,
       },
       {
-        path: 'course-detail',
+        path: "course-detail",
         element: <CourseDetail />,
       },
       {
-        path: 'testimonials',
+        path: "testimonials",
         element: <Testimonials />,
       },
       {
-        path: 'buy-now',
+        path: "buy-now",
         element: <BuyNow />,
       },
     ],
