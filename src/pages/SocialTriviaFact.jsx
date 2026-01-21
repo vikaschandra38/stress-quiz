@@ -13,7 +13,7 @@ const SocialTriviaFact = ({ onClick }) => {
           <img
             src={speakerImg}
             alt="Speaker"
-            className="w-full h-full md:h-full rounded-md object-cover object-center"
+            className="w-full h-full md:h-full md:min-h-96 md:max-h-110 rounded-md object-cover object-center"
           />
         </div>
 
@@ -32,14 +32,14 @@ const SocialTriviaFact = ({ onClick }) => {
             <h4 className="text-xl font-semibold text-primary mb-3 text-center underline">
               Mentioned in
             </h4>
-            <div className="flex flex-col flex-wrap justify-center items-center gap-2">
-              <img src={tenImg} alt="Ten Logo" className="h-18 md:h-22 object-contain" />
+            <div className="flex flex-col flex-wrap justify-center items-center gap-1">
+              <img src={tenImg} alt="Ten Logo" className="h-18 md:h-18 object-contain" />
               <img
                 src={courierMailImg}
                 alt="Courier Mail"
-                className="h-18 md:h-22 object-contain"
+                className="h-18 md:h-18 object-contain"
               />
-              <img src={sevenNewsImg} alt="7 News" className="h-18 md:h-22 object-contain" />
+              <img src={sevenNewsImg} alt="7 News" className="h-18 md:h-18 object-contain" />
             </div>
           </div>
         </div>

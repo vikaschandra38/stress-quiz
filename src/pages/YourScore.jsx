@@ -11,14 +11,14 @@ const YourScore = () => {
 
   return (
     <div className="flex flex-col justify-start items-center relative">
-      <div className="flex flex-col items-center justify-between">
+      <div className="flex flex-col items-center justify-between w-full">
         <div className="flex flex-col gap-1 items-center justify-center">
           <h3 className="text-lg font-normal text-black mb-0">Your Stress Level:</h3>
           <h1 className="text-3xl font-extrabold text-primary">{stressBand.title}</h1>
           <p className="text-lg text-center px-4 mt-2">{stressBand.description}</p>
         </div>
 
-        <div className="mt-6 flex flex-col md:flex-row gap-4">
+        <div className="mt-6 flex flex-col md:flex-row gap-4 w-full">
           <div className="w-full md:w-1/2 bg-black text-white border-2 border-black rounded-lg shadow-xs">
             <ul role="list" className="space-y-3 p-6 divide-y divide-default">
               <li className="flex items-center justify-between pb-3">
@@ -51,7 +51,7 @@ const YourScore = () => {
             <ul role="list" className="space-y-3 p-6 divide-y divide-default">
               <li className="flex items-center justify-between pb-3">
                 <div className="flex justify-center items-center w-full">
-                  <h3 className="text-md font-semibold min-h-8 md:min-h-12">
+                  <h3 className="text-md font-semibold min-h-8 md:min-h-12 flex items-center justify-center">
                     Don’t Let the Job Destroy You Course
                   </h3>
                 </div>

@@ -49,7 +49,7 @@ const Reviews = () => {
 
         <ProgressBar setShowButton={setShowButton} />
 
-        <div className="flex flex-col gap-4 md:gap-6 mx-auto">
+        <div className="flex flex-col md:flex-row gap-4 md:gap-6 mx-auto">
           {reviews.map((review, index) => (
             <div
               key={index}
@@ -59,7 +59,7 @@ const Reviews = () => {
                   : "opacity-0 translate-y-8"
               }`}
             >
-              <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+              <div className="flex flex-col justify-between items-start md:items-center md:min-h-25 gap-2">
                 <h2 className="text-md md:text-xl font-semibold">{review.name}</h2>
                 <StartRating />
               </div>
